@@ -2,8 +2,7 @@ defmodule Codex.ItemCategory do
   import Meeseeks.XPath
 
   def load() do
-    priv = :code.priv_dir(:codex)
-    file = Path.join([priv, "resources", "itemnames.xml"])
+    file = Path.join([:code.priv_dir(:codex), "resources", "Xml", "itemnames.xml"])
 
     file
     |> File.read!()
