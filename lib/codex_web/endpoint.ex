@@ -42,6 +42,7 @@ defmodule CodexWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+  plug(CORSPlug)
   plug CodexWeb.Router
 
   def rm_socket do
