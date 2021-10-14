@@ -22,7 +22,6 @@ defmodule Codex.Item do
     field :slot, EquipSlot
     field :gem_slot, GemSlot
     field :tab, InventoryTab
-    field :rarity, :integer
     field :is_two_handed, :boolean, default: false
     field :is_dress, :boolean, default: false
     field :jobs, {:array, :string}, default: []
