@@ -12,7 +12,7 @@ defmodule Codex.Repo.Migrations.CreateItems do
       add :is_two_handed, :boolean, null: false
       add :is_dress, :boolean, null: false
       add :jobs, {:array, :string}, null: false
-      add :rarity, :integer
+      add :slot_icon, :string
     end
   end
 end

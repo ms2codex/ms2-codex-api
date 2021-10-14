@@ -22,10 +22,10 @@ defmodule Codex.Item do
     field :slot, EquipSlot
     field :gem_slot, GemSlot
     field :tab, InventoryTab
-    field :rarity, :integer
     field :is_two_handed, :boolean, default: false
     field :is_dress, :boolean, default: false
     field :jobs, {:array, :string}, default: []
+    field :slot_icon, :string
   end
 
   @doc false
@@ -41,7 +41,8 @@ defmodule Codex.Item do
       :rarity,
       :is_two_handed,
       :is_dress,
-      :jobs
+      :jobs,
+      :slot_icon
     ])
     |> validate_required([:item_id])
   end

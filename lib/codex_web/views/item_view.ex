@@ -26,13 +26,13 @@ defmodule CodexWeb.ItemView do
       :item_id,
       :name,
       :category_id,
-      :rarity,
       :is_two_handed,
       :is_dress,
       :jobs,
       :slot,
       :gem_slot,
-      :tab
+      :tab,
+      :slot_icon
     ])
   end
 end
