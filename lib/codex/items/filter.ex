@@ -9,7 +9,6 @@ defmodule Codex.ItemFilter do
     {"equip_slot", :match},
     {"gem_slot", :match},
     {"inventory_tab", :match},
-    {"rarity", :match},
     {"is_two_handed", :match},
     {"is_dress", :match},
     {"jobs", :inclusion}

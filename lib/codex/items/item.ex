@@ -38,7 +38,6 @@ defmodule Codex.Item do
       :slot,
       :gem_slot,
       :tab,
-      :rarity,
       :is_two_handed,
       :is_dress,
       :jobs,
